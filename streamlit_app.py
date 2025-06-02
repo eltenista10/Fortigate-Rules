@@ -1,5 +1,5 @@
 import streamlit as st
-import paramiko
+import paramiko as paramiko
 
 
 def conectar_ssh(ip, usuario, password):
