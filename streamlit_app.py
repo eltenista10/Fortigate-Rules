@@ -22,9 +22,9 @@ ip = st.text_input("Ingrese la IP del servidor")
 usuario = st.text_input("Ingrese el usuario")
 password = st.text_input("Ingrese la contraseña", type="password")
 
-if st.button("Conectar"):
-    if not ip or not usuario or not password:
-        st.warning("Por favor, complete todos los campos.")
-    else:
-        ssh = conectar_ssh(ip, usuario, password)
-        st.success("Conexión SSH OK")
+st.button("Conectar"):
+if not ip or not usuario or not password:
+    st.warning("Por favor, complete todos los campos.")
+else:
+    ssh = conectar_ssh(ip, usuario, password)
+    st.success("Conexión SSH OK")
